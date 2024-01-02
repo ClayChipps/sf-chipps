@@ -1,0 +1,160 @@
+{
+  "name": "sf-chipps",
+  "description": "Salesforce CLI Plugins created by @ClayChipps",
+  "version": "0.0.1",
+  "author": "@ClayChipps",
+  "homepage": "https://github.com/ClayChipps/sf-chipps",
+  "bugs": "https://github.com/ClayChipps/sf-chipps/issues",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "packageManager": "yarn@1.22.19",
+  "keywords": [
+    "oclif",
+    "salesforce",
+    "sf"
+  ],
+  "license": "MIT",
+  "exports": "./dist/index.js",
+  "type": "module",
+  "oclif": {
+    "topicSeparator": " ",
+    "flexibleTaxonomy": true,
+    "plugins": [
+      "sf-chipps-package"
+    ],
+    "devPlugins": [
+      "@oclif/plugin-command-snapshot"
+    ],
+    "warn-if-update-available": {
+      "timeoutInDays": 7
+    },
+    "exitCodes": {
+      "default": 1,
+      "failedFlagParsing": 2,
+      "failedFlagValidation": 2,
+      "invalidArgsSpec": 2,
+      "nonExistentFlag": 2,
+      "requiredArgs": 2,
+      "unexpectedArgs": 2
+    }
+  },
+  "dependencies": {
+    "sf-chipps-package": "1.0.0",
+    "debug": "^4.3.4"
+  },
+  "repository": "@ClayChipps/sf-chipps",
+  "scripts": {
+    "build": "wireit",
+    "clean": "sf-clean",
+    "clean-all": "sf-clean all",
+    "compile": "wireit",
+    "docs": "sf-docs",
+    "format": "wireit",
+    "link-check": "wireit",
+    "lint": "wireit",
+    "oclif-artifacts": "oclif manifest",
+    "postpack": "rm -f oclif.manifest.json npm-shrinkwrap.json",
+    "prepack": "sf-prepack",
+    "prepare": "sf-install && yarn compile && yarn lint",
+    "prepublishOnly": "npm shrinkwrap",
+    "promote": "oclif promote",
+    "test": "wireit",
+    "test:deprecation-policy": "sf-release cli:artifacts:compare",
+    "test:only": "wireit",
+    "readme": "oclif readme --no-aliases --repository-prefix '<%- repo %>/blob/<%- version %>/<%- commandPath %>'",
+    "version": "oclif readme"
+  },
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "@oclif/plugin-command-snapshot": "^4.0.2",
+    "@salesforce/dev-scripts": "^8.1.0",
+    "@salesforce/ts-sinon": "^1.4.19",
+    "@types/debug": "^4.1.12",
+    "oclif": "^4.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5"
+  },
+  "wireit": {
+    "build": {
+      "dependencies": [
+        "compile",
+        "lint"
+      ]
+    },
+    "compile": {
+      "command": "tsc -p . --pretty --incremental",
+      "files": [
+        "src/**/*.ts",
+        "**/tsconfig.json",
+        "messages/**"
+      ],
+      "output": [
+        "lib/**",
+        "*.tsbuildinfo"
+      ],
+      "clean": "if-file-deleted"
+    },
+    "format": {
+      "command": "prettier --write \"+(src|test|schemas)/**/*.+(ts|js|json)|command-snapshot.json\"",
+      "files": [
+        "src/**/*.ts",
+        "test/**/*.ts",
+        "schemas/**/*.json",
+        "command-snapshot.json",
+        ".prettier*"
+      ],
+      "output": []
+    },
+    "lint": {
+      "command": "eslint src test --color --cache --cache-location .eslintcache",
+      "files": [
+        "src/**/*.ts",
+        "test/**/*.ts",
+        "messages/**",
+        "**/.eslint*",
+        "**/tsconfig.json"
+      ],
+      "output": []
+    },
+    "test:compile": {
+      "command": "tsc -p \"./test\" --pretty",
+      "files": [
+        "test/**/*.ts",
+        "**/tsconfig.json"
+      ],
+      "output": []
+    },
+    "test": {
+      "dependencies": [
+        "test:compile",
+        "test:only",
+        "lint"
+      ]
+    },
+    "test:only": {
+      "command": "nyc mocha \"test/**/*.test.ts\"",
+      "env": {
+        "FORCE_COLOR": "2"
+      },
+      "files": [
+        "test/**/*.ts",
+        "src/**/*.ts",
+        "**/tsconfig.json",
+        ".mocha*",
+        "!*.nut.ts",
+        ".nycrc"
+      ],
+      "output": []
+    },
+    "link-check": {
+      "command": "node -e \"process.exit(process.env.CI ? 0 : 1)\" || linkinator \"**/*.md\" --skip \"CHANGELOG.md|node_modules|test/|confluence.internal.salesforce.com|%s\" --markdown --retry --directory-listing --verbosity error",
+      "files": [
+        "./*.md",
+        "./!(CHANGELOG).md",
+        "messages/**/*.md"
+      ],
+      "output": []
+    }
+  }
+}
