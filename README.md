@@ -16,18 +16,17 @@ Please report any issues at https://github.com/ClayChipps/sf-chipps/issues
 
 <!-- commands -->
 
-- [`sf-chipps chipps package dependencies install`](#sf-chipps-chipps-package-dependencies-install)
-- [`sf-chipps chipps package version cleanup`](#sf-chipps-chipps-package-version-cleanup)
+- [`sf chipps package dependencies install`](#sf-chipps-package-dependencies-install)
+- [`sf chipps package version cleanup`](#sf-chipps-package-version-cleanup)
 
-## `sf-chipps chipps package dependencies install`
+## `sf chipps package dependencies install`
 
 Install package dependencies for a Salesforce project.
 
 ```
 USAGE
-  $ sf-chipps chipps package dependencies install -o <value> [--json] [-a all|package] [--api-version <value>] [-z <value>] [-i
-    All|Delta] [-k <value>] [-r] [-b <value>] [-s AllUsers|AdminsOnly] [-v <value>] [-t DeprecateOnly|Mixed|Delete] [-w
-    <value>]
+  $ sf chipps package dependencies install -o <value> [--json] [-a all|package] [--api-version <value>] [-z <value>] [-i All|Delta] [-k
+    <value>] [-r] [-b <value>] [-s AllUsers|AdminsOnly] [-v <value>] [-t DeprecateOnly|Mixed|Delete] [-w <value>]
 
 FLAGS
   -a, --apex-compile=<option>        Compile all Apex in the org and package, or only Apex in the package; unlocked
@@ -63,11 +62,11 @@ DESCRIPTION
   Installs all specified package dependencies in a Salesforce DX project using the sfdx-project.json definition.
 
 EXAMPLES
-  $ sf-chipps chipps package dependencies install --target-org myTargetOrg --target-dev-hub myTargetDevHub
+  $ sf chipps package dependencies install --target-org myTargetOrg --target-dev-hub myTargetDevHub
 
-  $ sf-chipps chipps package dependencies install --target-org myTargetOrg --target-dev-hub myTargetDevHub --installation-key "MyPackage1Alias:MyPackage1Key"
+  $ sf chipps package dependencies install --target-org myTargetOrg --target-dev-hub myTargetDevHub --installation-key "MyPackage1Alias:MyPackage1Key"
 
-  $ sf-chipps chipps package dependencies install --target-org myTargetOrg --target-dev-hub myTargetDevHub --installation-key "MyPackage1Alias:MyPackage1Key" --installation-key "MyPackage2Alias:MyPackage2Key"
+  $ sf chipps package dependencies install --target-org myTargetOrg --target-dev-hub myTargetDevHub --installation-key "MyPackage1Alias:MyPackage1Key" --installation-key "MyPackage2Alias:MyPackage2Key"
 
 FLAG DESCRIPTIONS
   -a, --apex-compile=all|package
@@ -115,13 +114,13 @@ FLAG DESCRIPTIONS
 
 _See code: [sf-chipps-package](https://github.com/ClayChipps/sf-chipps-package/blob/v1.0.0/lib/commands/chipps/package/dependencies/install.ts)_
 
-## `sf-chipps chipps package version cleanup`
+## `sf chipps package version cleanup`
 
 Cleanup package versions.
 
 ```
 USAGE
-  $ sf-chipps chipps package version cleanup -s <value> -p <value> -v <value> [--json] [--api-version <value>]
+  $ sf chipps package version cleanup -s <value> -p <value> -v <value> [--json] [--api-version <value>]
 
 FLAGS
   -p, --package=<value>         (required) Package Id
@@ -140,7 +139,7 @@ DESCRIPTION
   versions.
 
 EXAMPLES
-  $ sf-chipps chipps package version cleanup --package 0Hoxx00000000CqCAI --matcher 2.10.0 --target-dev-hub myDevHub
+  $ sf chipps package version cleanup --package 0Hoxx00000000CqCAI --matcher 2.10.0 --target-dev-hub myDevHub
 
 FLAG DESCRIPTIONS
   -p, --package=<value>  Package Id
