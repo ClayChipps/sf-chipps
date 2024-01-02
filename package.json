@@ -67,7 +67,7 @@
   },
   "types": "dist/index.d.ts",
   "devDependencies": {
-    "@oclif/plugin-command-snapshot": "^4.0.2",
+    "@oclif/plugin-command-snapshot": "^5.0.5",
     "@salesforce/dev-scripts": "^8.1.0",
     "@salesforce/ts-sinon": "^1.4.19",
     "@types/debug": "^4.1.12",
