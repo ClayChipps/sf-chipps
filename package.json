@@ -1,18 +1,20 @@
 {
   "name": "sf-chipps",
   "description": "Salesforce CLI Plugins created by @ClayChipps",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "@ClayChipps",
   "homepage": "https://github.com/ClayChipps/sf-chipps",
   "bugs": "https://github.com/ClayChipps/sf-chipps/issues",
+  "repository": "@ClayChipps/sf-chipps",
   "engines": {
     "node": ">=16.0.0"
   },
   "packageManager": "yarn@1.22.19",
   "files": [
-    "/dist/**/*.js",
+    "/lib",
     "/oclif.manifest.json",
-    "/npm-shrinkwrap.json"
+    "/npm-shrinkwrap.json",
+    "/oclif.lock"
   ],
   "keywords": [
     "oclif",
@@ -22,22 +24,22 @@
   "license": "MIT",
   "exports": "./dist/index.js",
   "type": "module",
+  "types": "dist/index.d.ts",
   "oclif": {
+    "additionalVersionFlags": [
+      "-v"
+    ],
+    "additionalHelpFlags": [
+      "-h"
+    ],
     "bin": "sf",
     "binAliases": [
       "sfdx"
     ],
-    "topicSeparator": " ",
-    "flexibleTaxonomy": true,
-    "plugins": [
-      "sf-chipps-package"
-    ],
+    "commands": "lib/commands",
     "devPlugins": [
       "@oclif/plugin-command-snapshot"
     ],
-    "warn-if-update-available": {
-      "timeoutInDays": 7
-    },
     "exitCodes": {
       "default": 1,
       "failedFlagParsing": 2,
@@ -46,13 +48,30 @@
       "nonExistentFlag": 2,
       "requiredArgs": 2,
       "unexpectedArgs": 2
+    },
+    "flexibleTaxonomy": true,
+    "plugins": [
+      "sf-chipps-package"
+    ],
+    "repositoryPrefix": "<%- repo %>/blob/<%- version %>/<%- commandPath %>",
+    "topicSeparator": " ",
+    "warn-if-update-available": {
+      "timeoutInDays": 7
     }
   },
   "dependencies": {
-    "sf-chipps-package": "1.0.0",
+    "sf-chipps-package": "1.2.0",
     "debug": "^4.3.4"
   },
-  "repository": "@ClayChipps/sf-chipps",
+  "devDependencies": {
+    "@oclif/plugin-command-snapshot": "^5.0.5",
+    "@salesforce/dev-scripts": "^8.2.0",
+    "@salesforce/ts-sinon": "^1.4.19",
+    "@types/debug": "^4.1.12",
+    "oclif": "^4.1.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
   "scripts": {
     "build": "wireit",
     "clean": "sf-clean",
@@ -68,20 +87,9 @@
     "prepare": "sf-install && yarn compile && yarn lint",
     "prepublishOnly": "npm shrinkwrap",
     "promote": "oclif promote",
-    "readme": "oclif readme --no-aliases --repository-prefix '<%- repo %>/blob/<%- version %>/<%- commandPath %>'",
+    "readme": "oclif readme --no-aliases",
     "test": "wireit",
-    "test:only": "wireit",
-    "version": "oclif readme"
-  },
-  "types": "dist/index.d.ts",
-  "devDependencies": {
-    "@oclif/plugin-command-snapshot": "^4.0.2",
-    "@salesforce/dev-scripts": "^8.1.0",
-    "@salesforce/ts-sinon": "^1.4.19",
-    "@types/debug": "^4.1.12",
-    "oclif": "^4.1.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5"
+    "test:only": "wireit"
   },
   "wireit": {
     "build": {
