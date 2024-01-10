@@ -15,9 +15,8 @@ Please report any issues at https://github.com/ClayChipps/sf-chipps/issues
 ## Commands
 
 <!-- commands -->
-
-- [`sf chipps package dependencies install`](#sf-chipps-package-dependencies-install)
-- [`sf chipps package version cleanup`](#sf-chipps-package-version-cleanup)
+* [`sf chipps package dependencies install`](#sf-chipps-package-dependencies-install)
+* [`sf chipps package version cleanup`](#sf-chipps-package-version-cleanup)
 
 ## `sf chipps package dependencies install`
 
@@ -152,5 +151,4 @@ FLAG DESCRIPTIONS
 ```
 
 _See code: [sf-chipps-package](https://github.com/ClayChipps/sf-chipps-package/blob/1.2.0/src/commands/chipps/package/version/cleanup.ts)_
-
 <!-- commandsstop -->
