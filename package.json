@@ -1,7 +1,7 @@
 {
   "name": "sf-chipps",
   "description": "Salesforce CLI Plugins created by @ClayChipps",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "@ClayChipps",
   "homepage": "https://github.com/ClayChipps/sf-chipps",
   "bugs": "https://github.com/ClayChipps/sf-chipps/issues",
