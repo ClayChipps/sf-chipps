@@ -915,10 +915,10 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
-"@salesforce/core@^6.4.0", "@salesforce/core@^6.4.1", "@salesforce/core@^6.4.2":
-  version "6.4.3"
-  resolved "https://registry.yarnpkg.com/@salesforce/core/-/core-6.4.3.tgz#77edcf00c4b6e0b43a0620eb7d1cd97ad0bf17e4"
-  integrity sha512-MEHd9W2PM+Ytosirry7vInBrtU4RZK+v7ubNozbR4kCWr4yMe+1vzAkGqB2NoL5vAVbOmF7wyy8+tMGYCyLyww==
+"@salesforce/core@^6.4.1", "@salesforce/core@^6.4.4":
+  version "6.4.7"
+  resolved "https://registry.yarnpkg.com/@salesforce/core/-/core-6.4.7.tgz#f15538380aa5c75de697d3c95a2ddbdabae69dbb"
+  integrity sha512-gebjw2xC8Z0gqS3lYRQWz7J+PuGZtybotrnnaJbnzzxdfpBFIp6PjW4nt/235BQW9UWFTLaQh+AwkFgmMTTSkA==
   dependencies:
     "@salesforce/kit" "^3.0.15"
     "@salesforce/schemas" "^1.6.1"
@@ -932,7 +932,7 @@
     jsforce "^2.0.0-beta.29"
     jsonwebtoken "9.0.2"
     jszip "3.10.1"
-    pino "^8.16.2"
+    pino "^8.17.2"
     pino-abstract-transport "^1.1.0"
     pino-pretty "^10.3.1"
     proper-lockfile "^4.1.2"
@@ -952,16 +952,16 @@
     "@salesforce/ts-types" "^2.0.9"
     tslib "^2.6.2"
 
-"@salesforce/packaging@^3.0.15":
-  version "3.0.15"
-  resolved "https://registry.yarnpkg.com/@salesforce/packaging/-/packaging-3.0.15.tgz#14c40552d45a80d238706a5e2017cb98526f1e24"
-  integrity sha512-VwejqIJDHEjk0gXnY9jN4xThE09nJMi1D5skcbgJ8POFqEG65F4d3oCQDJliXJ0zcZKXcrCSBkZcWSxPn+lZKg==
+"@salesforce/packaging@^3.1.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@salesforce/packaging/-/packaging-3.2.0.tgz#68ee97c4bb6d7852ddd468e743c9d3c505383036"
+  integrity sha512-mccIVBVWldsBAAbllRB6QO2eRI5df4BpoVz8knZop22Ti0sIQSypLLZOwvzxOFw/BE3PJ50NuFrKngrBWEbtKw==
   dependencies:
     "@oclif/core" "^3"
-    "@salesforce/core" "^6.4.0"
+    "@salesforce/core" "^6.4.4"
     "@salesforce/kit" "^3.0.15"
     "@salesforce/schemas" "^1.6.1"
-    "@salesforce/source-deploy-retrieve" "^10.2.5"
+    "@salesforce/source-deploy-retrieve" "^10.2.6"
     "@salesforce/ts-types" "^2.0.9"
     fast-xml-parser "^4.3.1"
     globby "^11"
@@ -1008,12 +1008,12 @@
     chalk "^4"
     inquirer "^8.2.5"
 
-"@salesforce/source-deploy-retrieve@^10.2.5":
-  version "10.2.5"
-  resolved "https://registry.yarnpkg.com/@salesforce/source-deploy-retrieve/-/source-deploy-retrieve-10.2.5.tgz#bd2037e28d17ff9bead321acedc63bafb05bd952"
-  integrity sha512-8XDQgEgESToJX7/0f0/OTcCYt1bGpHSU+FwOddIBfmajILjKLRxHTAMMkVFuvniAFoyrlz9M6coy3DMp+gcltQ==
+"@salesforce/source-deploy-retrieve@^10.2.6":
+  version "10.2.10"
+  resolved "https://registry.yarnpkg.com/@salesforce/source-deploy-retrieve/-/source-deploy-retrieve-10.2.10.tgz#76a70b534258bcddd4542a9709b1c2bfb1c93726"
+  integrity sha512-Io8JpYydSfdx7hgjYLj/5ZNIGKp3JZpcB/PVY+/uql6tFhGXcCSetyLbGnFdTw1lLlpN8RrYxexJG2PbhdoiYg==
   dependencies:
-    "@salesforce/core" "^6.4.2"
+    "@salesforce/core" "^6.4.4"
     "@salesforce/kit" "^3.0.15"
     "@salesforce/ts-types" "^2.0.9"
     fast-levenshtein "^3.0.0"
@@ -6380,7 +6380,7 @@ pino-std-serializers@^6.0.0:
   resolved "https://registry.yarnpkg.com/pino-std-serializers/-/pino-std-serializers-6.2.2.tgz#d9a9b5f2b9a402486a5fc4db0a737570a860aab3"
   integrity sha512-cHjPPsE+vhj/tnhCy/wiMh3M3z3h/j15zHQX+S9GkTBgqJuTuJzYJ4gUyACLhDaJ7kk9ba9iRDmbH2tJU03OiA==
 
-pino@^8.16.2:
+pino@^8.17.2:
   version "8.17.2"
   resolved "https://registry.yarnpkg.com/pino/-/pino-8.17.2.tgz#0ed20175623a69d31664a1e8a5f85476272224be"
   integrity sha512-LA6qKgeDMLr2ux2y/YiUt47EfgQ+S9LznBWOJdN3q1dx2sv0ziDLUBeVpyVv17TEcGCBuWf0zNtg3M5m1NhhWQ==
@@ -7046,16 +7046,17 @@ sf-chipps-dev-scripts@^1.0.1:
     typescript "^4.9.5"
     wireit "^0.14.1"
 
-sf-chipps-package@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/sf-chipps-package/-/sf-chipps-package-1.2.0.tgz#c6b9c12866b797b326a512fc30cf3be18ecb0b5e"
-  integrity sha512-trPDl5d9E1dUqq4a1wwaXkJpRbZNwseq9F2Hh4PfYlQt+qp1HAjU67eZMR7w9VLBFANLun3YxcyxxCWEiVMD2g==
+sf-chipps-package@1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/sf-chipps-package/-/sf-chipps-package-1.2.2.tgz#5e815010b68a947bdd8656ff7c8703a0d8cc88ca"
+  integrity sha512-sh3zJkDrsic0ovJKHbenmcU7sGhwqmPoB2Egoe86MBUksKX+r352rZFDNDzEb3Va8bdEVrH1F1zS6fLZbDezhA==
   dependencies:
     "@oclif/core" "^3.15.1"
-    "@salesforce/core" "^6.4.2"
+    "@salesforce/core" "^6.4.4"
     "@salesforce/kit" "^3.0.15"
-    "@salesforce/packaging" "^3.0.15"
+    "@salesforce/packaging" "^3.1.0"
     "@salesforce/sf-plugins-core" "^5.0.13"
+    "@salesforce/ts-types" "^2.0.9"
 
 shebang-command@^2.0.0:
   version "2.0.0"
