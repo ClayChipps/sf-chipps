@@ -915,10 +915,10 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
-"@salesforce/core@^6.4.0", "@salesforce/core@^6.4.1", "@salesforce/core@^6.4.2":
-  version "6.4.3"
-  resolved "https://registry.yarnpkg.com/@salesforce/core/-/core-6.4.3.tgz#77edcf00c4b6e0b43a0620eb7d1cd97ad0bf17e4"
-  integrity sha512-MEHd9W2PM+Ytosirry7vInBrtU4RZK+v7ubNozbR4kCWr4yMe+1vzAkGqB2NoL5vAVbOmF7wyy8+tMGYCyLyww==
+"@salesforce/core@^6.4.0", "@salesforce/core@^6.4.1", "@salesforce/core@^6.4.2", "@salesforce/core@^6.4.4":
+  version "6.4.7"
+  resolved "https://registry.yarnpkg.com/@salesforce/core/-/core-6.4.7.tgz#f15538380aa5c75de697d3c95a2ddbdabae69dbb"
+  integrity sha512-gebjw2xC8Z0gqS3lYRQWz7J+PuGZtybotrnnaJbnzzxdfpBFIp6PjW4nt/235BQW9UWFTLaQh+AwkFgmMTTSkA==
   dependencies:
     "@salesforce/kit" "^3.0.15"
     "@salesforce/schemas" "^1.6.1"
@@ -932,7 +932,7 @@
     jsforce "^2.0.0-beta.29"
     jsonwebtoken "9.0.2"
     jszip "3.10.1"
-    pino "^8.16.2"
+    pino "^8.17.2"
     pino-abstract-transport "^1.1.0"
     pino-pretty "^10.3.1"
     proper-lockfile "^4.1.2"
@@ -971,13 +971,13 @@
     jsforce "^2.0.0-beta.29"
     jszip "^3.10.1"
 
-"@salesforce/plugin-command-reference@^3.0.58":
-  version "3.0.59"
-  resolved "https://registry.yarnpkg.com/@salesforce/plugin-command-reference/-/plugin-command-reference-3.0.59.tgz#309dba84ae01828e1b8d62d80390240418688c43"
-  integrity sha512-8mjPJyxz1FF6Ei7RwjMLHZTmFX2+bOOh5aq7lNwk3qkSqy5cSTW8bf+1/lcOPkm2125qCbAUL0wAgAyNACF6Xg==
+"@salesforce/plugin-command-reference@^3.0.61":
+  version "3.0.61"
+  resolved "https://registry.yarnpkg.com/@salesforce/plugin-command-reference/-/plugin-command-reference-3.0.61.tgz#3f7cd5089b52eed02059d5b6831349913b092f7c"
+  integrity sha512-0mS90XJW8UaWDaf+bGz0digHjUz69nEZJkYV6UJ/TliYciHlGX3GZT/pRG0rEvnNvggIdcSbdZrq6IP9xyZoVg==
   dependencies:
-    "@oclif/core" "^3.15.1"
-    "@salesforce/core" "^6.4.1"
+    "@oclif/core" "^3.16.0"
+    "@salesforce/core" "^6.4.4"
     "@salesforce/kit" "^3.0.15"
     "@salesforce/sf-plugins-core" "^5.0.13"
     "@salesforce/ts-types" "^2.0.9"
@@ -6380,7 +6380,7 @@ pino-std-serializers@^6.0.0:
   resolved "https://registry.yarnpkg.com/pino-std-serializers/-/pino-std-serializers-6.2.2.tgz#d9a9b5f2b9a402486a5fc4db0a737570a860aab3"
   integrity sha512-cHjPPsE+vhj/tnhCy/wiMh3M3z3h/j15zHQX+S9GkTBgqJuTuJzYJ4gUyACLhDaJ7kk9ba9iRDmbH2tJU03OiA==
 
-pino@^8.16.2:
+pino@^8.17.2:
   version "8.17.2"
   resolved "https://registry.yarnpkg.com/pino/-/pino-8.17.2.tgz#0ed20175623a69d31664a1e8a5f85476272224be"
   integrity sha512-LA6qKgeDMLr2ux2y/YiUt47EfgQ+S9LznBWOJdN3q1dx2sv0ziDLUBeVpyVv17TEcGCBuWf0zNtg3M5m1NhhWQ==
