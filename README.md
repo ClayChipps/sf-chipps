@@ -111,7 +111,7 @@ FLAG DESCRIPTIONS
     from by entering the branch build name. If not specified, the builds from NULL branch will be considered.
 ```
 
-_See code: [sf-chipps-package](https://github.com/ClayChipps/sf-chipps-package/blob/1.2.6/src/commands/chipps/package/dependencies/install.ts)_
+_See code: [sf-chipps-package](https://github.com/ClayChipps/sf-chipps-package/blob/1.2.7/src/commands/chipps/package/dependencies/install.ts)_
 
 ## `sf chipps package version cleanup`
 
@@ -150,5 +150,5 @@ FLAG DESCRIPTIONS
     The MAJOR.MINOR.PATCH matcher that should be used to find package versions to delete.
 ```
 
-_See code: [sf-chipps-package](https://github.com/ClayChipps/sf-chipps-package/blob/1.2.6/src/commands/chipps/package/version/cleanup.ts)_
+_See code: [sf-chipps-package](https://github.com/ClayChipps/sf-chipps-package/blob/1.2.7/src/commands/chipps/package/version/cleanup.ts)_
 <!-- commandsstop -->
