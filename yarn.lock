@@ -8093,10 +8093,10 @@ sf-chipps-dev-scripts@^1.0.1:
     typescript "^4.9.5"
     wireit "^0.14.1"
 
-sf-chipps-package@1.2.6:
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/sf-chipps-package/-/sf-chipps-package-1.2.6.tgz#11cc3a96ba8fa3c51ea08c63b163683dc0110839"
-  integrity sha512-OqZpkhwdB1Bbz9PyDNMSC7/aePHC7+S1qlcJwId+fGG/m0lGcyHo59PAOIy8xB7l4EeGvoWL9A/1ZyOOgFjB+Q==
+sf-chipps-package@1.2.7:
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/sf-chipps-package/-/sf-chipps-package-1.2.7.tgz#def45039955d599b848760b1c416e11a9da3ee82"
+  integrity sha512-YVtcmpnOJvESzWhFhnCh8D+Wh9aox5FvZam78x4PhvEj1ZFTJPFps5GNvrFFXFmK4iiW1qmrOBx2QonX2JGp4w==
   dependencies:
     "@oclif/core" "^3.18.2"
     "@salesforce/core" "^6.5.1"

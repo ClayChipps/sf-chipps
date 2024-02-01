@@ -62,7 +62,7 @@
   },
   "dependencies": {
     "debug": "^4.3.4",
-    "sf-chipps-package": "1.2.6"
+    "sf-chipps-package": "1.2.7"
   },
   "devDependencies": {
     "@oclif/plugin-command-snapshot": "^5.0.6",
