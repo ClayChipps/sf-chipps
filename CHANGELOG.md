@@ -1,3 +1,12 @@
+## [0.2.3](/compare/0.2.2...0.2.3) (2024-02-01)
+
+
+### Bug Fixes
+
+* **deps:** bump sf-chipps-package from 1.2.0 to 1.2.6 f60fcba
+
+
+
 ## [0.2.2](/compare/0.2.1...0.2.2) (2024-01-10)
 
 
