@@ -8061,10 +8061,10 @@ setimmediate@^1.0.5:
   resolved "https://registry.yarnpkg.com/setimmediate/-/setimmediate-1.0.5.tgz#290cbb232e306942d7d7ea9b83732ab7856f8285"
   integrity sha512-MATJdZp8sLqDl/68LfQmbP8zKPLQNV6BIZoIgrscFDQ+RsvK/BxeDQOgyxKKoh0y/8h3BqVFnCqQ/gd+reiIXA==
 
-sf-chipps-dev-scripts@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/sf-chipps-dev-scripts/-/sf-chipps-dev-scripts-1.0.1.tgz#fd9c1f3f2e26babcd64c3f79cb477805b83821c3"
-  integrity sha512-8I4wuSVtjKzcJKMbagcQ0m6E0NMmReZWQPF/Ehaa2BBWyQhYZjIyiJOYDNp4zsNapyoX1+75KEYQkI3sfCKNAQ==
+sf-chipps-dev-scripts@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/sf-chipps-dev-scripts/-/sf-chipps-dev-scripts-1.1.0.tgz#66e300172b831187aad560ff51f1cd9e6a4f6836"
+  integrity sha512-HRvEOkjMmHNZbtgHJ/aCMQ5q5H/INdwQWOT/DICSyc6dRtzhtXukXDB3Aikv8vHnL6M22UfjQeQtsaCrfadT1A==
   dependencies:
     "@commitlint/cli" "^17.1.2"
     "@commitlint/config-conventional" "^17.8.1"
