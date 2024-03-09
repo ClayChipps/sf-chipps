@@ -65,7 +65,7 @@
     "sf-chipps-package": "1.2.7"
   },
   "devDependencies": {
-    "@oclif/plugin-command-snapshot": "^5.0.7",
+    "@oclif/plugin-command-snapshot": "^5.1.1",
     "@salesforce/plugin-command-reference": "^3.0.64",
     "@salesforce/ts-sinon": "^1.4.19",
     "@types/debug": "^4.1.12",
